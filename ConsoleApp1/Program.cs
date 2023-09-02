@@ -12,7 +12,7 @@ else
     str = str.ToLower();
 }
 Console.WriteLine(str);
-Console.WriteLine("\n2-masala");
+Console.WriteLine("\n\n2-masala");
 int x = 15;
 int y = 10;
 if (x>y)
@@ -37,3 +37,20 @@ else
         }
     }
 }
+
+
+Console.WriteLine("3-masala \n");
+Console.WriteLine("uzbekcha hafta kunini kiriting :");
+string uz = Console.ReadLine();
+string eng = uz switch
+{
+    "dushanba" => "Monday",
+    "seshanba" => "Tuesday",
+    "chorshanba" => "Wednesday",
+    "payshanba" => "Thursday",
+    "juma" => "Friday",
+    "shanba" => "Saturday",
+    "yakshanba" => "Sunday",
+
+};
+Console.WriteLine($"uzbek tilidagi {uz } hafta kuni engilis tilida {eng} bo'ladi .");
